@@ -55,5 +55,11 @@ export function buildEnvVars(env: MoltbotEnv): Record<string, string> {
   if (env.R2_SECRET_ACCESS_KEY) envVars.R2_SECRET_ACCESS_KEY = env.R2_SECRET_ACCESS_KEY;
   if (env.R2_BUCKET_NAME) envVars.R2_BUCKET_NAME = env.R2_BUCKET_NAME;
 
+  // Supabase storage credentials (alternative to R2)
+  if (env.SUPABASE_URL) envVars.SUPABASE_URL = env.SUPABASE_URL;
+  if (env.SUPABASE_ANON_KEY) envVars.SUPABASE_ANON_KEY = env.SUPABASE_ANON_KEY;
+  if (env.SUPABASE_SERVICE_KEY) envVars.SUPABASE_SERVICE_KEY = env.SUPABASE_SERVICE_KEY;
+  if (env.SUPABASE_BUCKET) envVars.SUPABASE_BUCKET = env.SUPABASE_BUCKET;
+
   return envVars;
 }

@@ -38,6 +38,11 @@ export interface MoltbotEnv {
   R2_SECRET_ACCESS_KEY?: string;
   R2_BUCKET_NAME?: string; // Override bucket name (default: 'moltbot-data')
   CF_ACCOUNT_ID?: string; // Cloudflare account ID for R2 endpoint
+  // Supabase configuration (alternative to R2)
+  SUPABASE_URL?: string; // Supabase project URL (e.g., https://xxx.supabase.co)
+  SUPABASE_ANON_KEY?: string; // Supabase anon key (public)
+  SUPABASE_SERVICE_KEY?: string; // Supabase service key (private, for admin operations)
+  SUPABASE_BUCKET?: string; // Supabase storage bucket name (default: 'moltbot-data')
   // Browser Rendering binding for CDP shim
   BROWSER?: Fetcher;
   CDP_SECRET?: string; // Shared secret for CDP endpoint authentication

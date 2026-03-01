@@ -4,7 +4,7 @@ import { createAccessMiddleware } from '../auth';
 import {
   ensureMoltbotGateway,
   findExistingMoltbotProcess,
-  syncToR2,
+  syncToStorage,
   waitForProcess,
 } from '../gateway';
 
@@ -236,7 +236,7 @@ adminApi.get('/storage', async (c) => {
 adminApi.post('/storage/sync', async (c) => {
   const sandbox = c.get('sandbox');
 
-  const result = await syncToR2(sandbox, c.env);
+  const result = await syncToStorage(sandbox, c.env);
 
   if (result.success) {
     return c.json({
