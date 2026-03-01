@@ -1,3 +1,14 @@
+---
+AIGC:
+    ContentProducer: Minimax Agent AI
+    ContentPropagator: Minimax Agent AI
+    Label: AIGC
+    ProduceID: "00000000000000000000000000000000"
+    PropagateID: "00000000000000000000000000000000"
+    ReservedCode1: 3045022100eb3db02e9f71b3833436897aeb179e2c87b352217a47a1bce4ec2b3f29d2984002206dd708c2335b042adf1f6b98f42ac950da05201718e4c1aea02323cebad54f66
+    ReservedCode2: 304502205d0d94835c09c72c5c79b41484b68ab97c9e75861e5401d01ca1279ecc81e933022100f35c760cd8c540a8e0e0110329cbaa9c0ef78013dc062583b44d7309c50e6143
+---
+
 # E2E tests for Moltworker
 
 End-to-end tests that deploy real Moltworker instances to Cloudflare infrastructure.

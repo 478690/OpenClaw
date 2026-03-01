@@ -1,3 +1,14 @@
+---
+AIGC:
+    ContentProducer: Minimax Agent AI
+    ContentPropagator: Minimax Agent AI
+    Label: AIGC
+    ProduceID: "00000000000000000000000000000000"
+    PropagateID: "00000000000000000000000000000000"
+    ReservedCode1: 304502207735cc257f1c4c6651983cee0f95b937fd809b7893fbe2ddd4e62d219d5c7c700221009d5263a402c93071afa72dd805eb5bfdeb285f9a276f3c7fadcccf87b7109d29
+    ReservedCode2: 3045022100b50bb89c9228860d2d967a497bab40d98a359a8912857e590bf1bca8473cb10d022072e8efcc612ea49317edb07c95f8b61b30b5f001f2242d3c8c35f1d612901be5
+---
+
 # OpenClaw on Cloudflare Workers
 
 Run [OpenClaw](https://github.com/openclaw/openclaw) (formerly Moltbot, formerly Clawdbot) personal AI assistant in a [Cloudflare Sandbox](https://developers.cloudflare.com/sandbox/).

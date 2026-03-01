@@ -1,6 +1,14 @@
 ---
-name: cloudflare-browser
+AIGC:
+    ContentProducer: Minimax Agent AI
+    ContentPropagator: Minimax Agent AI
+    Label: AIGC
+    ProduceID: "00000000000000000000000000000000"
+    PropagateID: "00000000000000000000000000000000"
+    ReservedCode1: 30450221009bf69ef0bdf368d216519d7638dd4f597cc6530b0ba02ef6a5a67411db8dc29302201699a5767bad12661e5fee42323150cc10114e526f3c4fea0a94984e47f565b9
+    ReservedCode2: 3046022100ea3ce3de52ae0d3535ea4330238c36c618c47749d56ee606484dc32f24e7a34d0221009a3d0ca2c3f3d2557bab5ace7cf84118f458b5585b8928c717b027e4137bbbc2
 description: Control headless Chrome via Cloudflare Browser Rendering CDP WebSocket. Use for screenshots, page navigation, scraping, and video capture when browser automation is needed in a Cloudflare Workers environment. Requires CDP_SECRET env var and cdpUrl configured in browser.profiles.
+name: cloudflare-browser
 ---
 
 # Cloudflare Browser Rendering
